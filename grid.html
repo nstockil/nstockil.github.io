@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/grid.css">
+    <title>Grid CSS</title>
+</head>
+
+<body class="site">
+    <h1>CSS Grid</h1>
+
+    <div>
+        <section>
+            <h2>Grid Container</h2>
+            <ul>
+                <li>the element with display:grid</li>
+                <li>can have many per page</li>
+                <li>can nest Containers</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Grid Item</h2>
+            <ul>
+                <li>direct first level descendent of Grid Container</li>
+                <li>automatically placed in grid, or precisely defined in css</li>
+                <li>descendents of these items are not affected by the grid at all</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Grid Line</h2>
+            <ul>
+                <li>Columns and rows of the grid</li>
+                <li>Have 4 lines out of the box. The four sides of the grid box</li>
+                <li>Additional lines are added through rows and column lines. This divides the grid into cells</li>
+                <li>Ordered by number starting with outer edges being number 1</li>
+                <li>This honours the alignement of the text/elements of the document</li>
+                <li>Can refer to a line by its number, or a defined name</li>
+            </ul>
+        </section>
+
+        <section>
+                <h2>Grid Cell</h2>
+                <ul>
+                    <li>Space between two adjacent row and column lines (the intersection)</li>
+                    <li>a.k.a. a table cell</li>
+                </ul>
+        </section>
+
+        <section>
+            <h2>Grid Track</h2>
+            <ul>
+                <li>Space between two or more adjacent gird lines</li>
+                <li>Column track - all vertical cells between two column lines</li>
+                <li>Row track - all horizontal cells between two row lines</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Grid Area</h2>
+            <ul>
+                <li>Rectangular area between four specific grid lines</li>
+                <li>can cover multiple cells</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Grid Gap</h2>
+            <ul>
+                <li>Empty space between grid tracks</li>
+                <li>Like a gutter between the tracks</li>
+                <li>As it is empty space, the background behind will show through</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>

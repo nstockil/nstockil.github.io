@@ -1,0 +1,67 @@
+:root {
+    --font-color:       #222;
+    --bg-color:         #222;
+    --bg-color-section: #ccc;
+    --font-color-title: #ccc;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font-color);
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    color: var(--font-color-title);
+    text-align: center;
+    margin: 1em;
+}
+
+section {
+    padding: 0 10px;
+    background: var(--bg-color-section);
+}
+
+.site {
+    width: 70%;
+    margin: 0 auto;
+    background: var(--bg-color);
+}
+
+/*
+ * on its own, display will produce a stacked grid
+ *  __________
+ * |__________|
+ * |__________|
+ * |__________| 
+ */
+
+.site {
+    display: grid;
+}
+
+/*
+ * will add space around the grid items
+ */
+.site {
+    grid-gap: 5px;
+}
+
+/*
+ * 
+ */
+.site {
+}
+
+/*
+ * 
+ */
+.site {
+}
+
+/*
+ * 
+ */
