@@ -7,19 +7,28 @@ body{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-footer {
-    text-align: right;
+header, footer, #menu {
+    display: block;
+    margin: 0 auto;
 }
 
-header {
-    text-align: center;
+/* set up grid*/
+#wrapper{
+    display: grid;
 }
+
+header { grid-area: header;}
+main { grid-area: main;}
+#menu { grid-area: menu;}
+footer { grid-area: footer;}
 
 @supports (grid-area: auto) {   
     @media screen and (min-width:  60em) {
-        .site {
-            display: grid;
-            grid-template-columns: 220px 4fr;
+        #wrapper {
+            grid-template-areas:
+                'header header header header header'
+                'menu main main main main'
+                'footer footer footer footer footer';
             grid-gap: 5px;
         }        
 
@@ -27,26 +36,9 @@ header {
             border: none;
         }
 
-        header {
-            grid-row: 1;
-            grid-column: 2;
-        }
-
-        footer  {
-            grid-row: 3;
-            grid-column: 2;
-        }
-        
         #menu {
             border-right: 1px solid black;
-            grid-column: 1/1;
-            grid-row: 1/4;
-        }
-
-        main {
-            grid-column: 2/4;
-            grid-row: 2;
-            margin-left: 1em;
+            padding-right: 10px;
         }
     }
 }
