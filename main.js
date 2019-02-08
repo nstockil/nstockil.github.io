@@ -19,8 +19,10 @@ var target = {
     y: 50
 };
 
-var targetPositions = [{x:10, y:10},{x:100, y:100},{x:400, y:550},{x:600, y:100},{x:900, y:500},{x:350, y:10}]
+var targetPositions = 10;
 var targetPositionIndex = 0;
+var sizeUpperBounds = 150;
+var sizeLowerBounds = 50;
 
 var context;
 var canvas;
@@ -63,12 +65,8 @@ function startGame(ev) {
         
         // update target size / location / color
         targetPositionIndex = 0;
-
-        target.height = 50;
-        target.width = 50;
-        target.color = 'red'
-        target.x = targetPositions[targetPositionIndex].x;
-        target.y = targetPositions[targetPositionIndex].y;
+        updateTarget();
+        target.color = 'red';
 
         // change event function to react
         console.log("Changing event handlers");
@@ -100,18 +98,29 @@ function react(ev) {
         addResult(targetPositionIndex+1, (time/1000)); // replace 100 with timer value
 
         // move target to next position or end game
-        if(++targetPositionIndex >= (targetPositions.length))
+        if(++targetPositionIndex >= targetPositions)
         {
             console.log("Game complete");
             document.removeEventListener("click",react);
             makeTargetStartButton();
             document.addEventListener("click",startGame);
         } else {
-            target.x = targetPositions[targetPositionIndex].x;
-            target.y = targetPositions[targetPositionIndex].y;
+            updateTarget();
             startTimer();
         }
     }
+}
+
+function updateTarget()
+{
+    var newSize = getRandomInteger(sizeLowerBounds, sizeUpperBounds);
+    var newX = getRandomInteger(0, canvas.width - newSize);
+    var newY = getRandomInteger(0, canvas.height - newSize);
+
+    target.x = newX;
+    target.y = newY;
+    target.height = newSize;
+    target.width = newSize;
 }
 
 function draw() {
@@ -167,4 +176,8 @@ function getTableInformation(){
     }
 
     return table.join("\n");
+}
+
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
