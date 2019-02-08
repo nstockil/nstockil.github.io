@@ -147,6 +147,7 @@ function exportResults() {
     var file = new Blob([content], {type: 'text/plain'});
     exportLink.href = URL.createObjectURL(file);
     exportLink.name = Date.now();
+    exportLink.download = Date.now();
     exportLink.click();
 }
 
