@@ -135,9 +135,11 @@ function addResult( round, time ) {
 
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
 
     cell1.innerHTML = round;
     cell2.innerHTML = "" + time + " seconds";
+    cell3.innerHTML = target.x;
 }
 
 function startTimer() {
