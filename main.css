@@ -46,10 +46,11 @@ body {
     display: grid;
     grid-template-areas: 
         'title title title title'
-        'game game game explain'
         'game game game result'
         'game game game result'
-        'game game game result';
+        'game game game result'
+        'game game game result'
+        'explain explain explain explain';
     grid-gap: 5px;
     padding: 5px;
 }
