@@ -19,9 +19,9 @@ var target = {
     y: 50
 };
 
-var targetPositions = 10;
+var targetPositions = 20;
 var targetPositionIndex = 0;
-var sizeUpperBounds = 150;
+var sizeUpperBounds = 175;
 var sizeLowerBounds = 50;
 
 var context;
@@ -139,7 +139,7 @@ function addResult( round, time ) {
 
     cell1.innerHTML = round;
     cell2.innerHTML = "" + time + " seconds";
-    cell3.innerHTML = target.x;
+    cell3.innerHTML = target.width;
 }
 
 function startTimer() {
