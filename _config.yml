@@ -8,7 +8,7 @@ title: Niamh Stockil
 subtitle: Portfolio site
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio site for Niamh Stockil. Senior Software Engineer.
-baseurl: "/site/"
+baseurl: ""
 url: "https://nstockil.github.io"
 github_username:  nstockil
 
