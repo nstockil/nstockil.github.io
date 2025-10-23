@@ -10,4 +10,6 @@ permalink: /about/
 
 ☕ Coffee Enthusiast.
 
+📸 Photography.
+
 🐈🐈‍⬛🐈 Cats.

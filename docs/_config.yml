@@ -16,3 +16,5 @@ github_username:  nstockil
 theme: minima
 plugins:
   - jekyll-feed
+
+markdown: GFM
