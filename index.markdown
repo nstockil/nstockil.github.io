@@ -4,7 +4,7 @@
 
 layout: home
 ---
-# Hello! My name is Niamh.
+Hello! My name is Niamh.
 
 I'm a senior software engineer with nearly a decades experience in building complex systems.
 
