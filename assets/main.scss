@@ -32,8 +32,14 @@ header {
   line-height: 1.2;
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 3em;
 }
+
+.site-title:hover {
+  text-shadow: #666 0 0 1px;
+  text-decoration: none;
+}
+
 
 .site-subtitle {
   font-size: 1em;

@@ -14,6 +14,10 @@ gem "minima", "~> 2.5"
 gem "webrick", "~> 1.7"
 # Syntax highlighter
 gem "rouge", "~> 4.0"
+# Required for Ruby 3.4+
+gem "csv", "~> 3.2"
+gem "base64", "~> 0.1"
+gem "bigdecimal", "~> 3.1"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"

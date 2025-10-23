@@ -5,14 +5,11 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     
     <div class="site-title-wrapper">
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      {%- if site.subtitle -%}
-        <p class="site-subtitle">{{ site.subtitle }}</p>
-      {%- endif -%}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="font-size: 5em;">{{ site.title | escape }}</a>
     </div>
 
     {%- if page_paths -%}
-      <nav class="site-nav">
+      <nav class="site-nav" style="width: 100%;">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">

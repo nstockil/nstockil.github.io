@@ -19,6 +19,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Minima theme settings
+minima:
+  show_excerpts: true
+
 markdown: kramdown
 highlighter: rouge
 kramdown:

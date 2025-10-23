@@ -4,9 +4,10 @@
 
 layout: home
 ---
+# Hello! My name is Niamh.
 
-Hi, my name is Niamh. I'm a senior software engineer with nearly a decades experience in building complex systems.
+I'm a senior software engineer with nearly a decades experience in building complex systems.
 
-As an engineer I strive to deliver high quality, maintainable systems, bringing curiosity and collaboration with me.
+As an engineer I strive to deliver high quality, maintainable systems. Curiosity and collaboration are key to my process.
 
 This site is currently in progress in case you have found it.
