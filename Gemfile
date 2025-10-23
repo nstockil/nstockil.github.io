@@ -12,6 +12,8 @@ gem "jekyll", "~> 4.3.0"
 gem "minima", "~> 2.5"
 # Webrick is required for Ruby 3.0+
 gem "webrick", "~> 1.7"
+# Syntax highlighter
+gem "rouge", "~> 4.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
