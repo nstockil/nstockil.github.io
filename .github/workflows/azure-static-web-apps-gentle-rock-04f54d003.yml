@@ -96,8 +96,9 @@ jobs:
           browser: chrome
 
   # Deploy to Azure Static Web Apps only after tests pass
+  # Skip deployment for open PRs - only deploy on main branch pushes or merged PRs
   deploy:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
     runs-on: ubuntu-latest
     needs: [build, accessibility-tests, cypress-tests]
     name: Deploy to Azure
