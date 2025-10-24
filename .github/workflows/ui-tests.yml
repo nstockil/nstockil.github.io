@@ -40,7 +40,9 @@ jobs:
       - name: Install test dependencies
         run: |
           npm init -y
-          npm install --save-dev @axe-core/cli http-server
+          npm install --save-dev @axe-core/cli http-server browser-driver-manager
+      - name: Setup Chrome and ChromeDriver
+        run: npx browser-driver-manager install chrome
       - name: Start local server
         run: npx http-server _site -p 3000 &
       - name: Wait for server
