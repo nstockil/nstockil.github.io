@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "color-contrast": { "enabled": true },
+    "image-alt": { "enabled": true },
+    "heading-order": { "enabled": true },
+    "landmark-one-main": { "enabled": true },
+    "page-has-heading-one": { "enabled": true },
+    "region": { "enabled": true }
+  },
+  "tags": ["wcag2a", "wcag2aa", "wcag21aa"],
+  "locale": "en",
+  "reporter": "v2",
+  "outputDir": "test/reports",
+  "save": true,
+  "timeout": 30000
+}

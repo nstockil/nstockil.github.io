@@ -30,3 +30,10 @@ kramdown:
   syntax_highlighter: rouge
   parse_block_html: true
   parse_span_html: true
+
+# Custom navigation order for better user experience
+header_pages:
+  - about.markdown
+  - posts.markdown  
+  - workshops.markdown
+  - biglifefix.markdown
