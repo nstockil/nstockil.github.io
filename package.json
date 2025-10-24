@@ -1,0 +1,38 @@
+{
+  "name": "nstockil-github-io",
+  "version": "1.0.0",
+  "description": "Portfolio site for Niamh Stockil - UI testing setup",
+  "private": true,
+  "scripts": {
+    "test": "npm run build && npm run test:cypress && npm run test:accessibility",
+    "test:accessibility": "axe http://localhost:3000 --exit --config test/.axerc.json",
+    "test:accessibility:local": "npm run serve & timeout 5 && npm run test:accessibility && npm run stop:server",
+    "test:cypress": "cypress run --config-file test/cypress.config.js",
+    "test:cypress:open": "cypress open --config-file test/cypress.config.js",
+    "serve": "http-server _site -p 3000 -c-1",
+    "build": "bundle exec jekyll build",
+    "build:serve": "npm run build && npm run serve",
+    "build:test": "npm run build && start /B npm run serve && timeout 5 && npm run test && npm run stop:server",
+    "cy:install": "cypress install",
+    "stop:server": "taskkill /F /IM node.exe /T 2>nul || echo No server to stop",
+    "pretest": "npm run build",
+    "dev": "bundle exec jekyll serve --livereload"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "^4.8.0",
+    "axe-core": "^4.11.0",
+    "cypress": "^13.6.0",
+    "cypress-axe": "^1.5.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "jekyll",
+    "portfolio",
+    "testing",
+    "accessibility",
+    "cypress"
+  ],
+  "author": "Niamh Stockil",
+  "license": "MIT"
+}

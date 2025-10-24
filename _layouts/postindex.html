@@ -2,6 +2,10 @@
 layout: base
 ---
 <div class="post-index">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+    
     {% if site.paginate %}
     {% assign posts = paginator.posts %}
     {% else %}
@@ -18,11 +22,11 @@ layout: base
         {%- for post in posts -%}
         <li>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
+            <h2>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a>
-            </h3>
+            </h2>
             {%- if site.minima.show_excerpts -%}
             {{ post.excerpt }}
             {%- endif -%}

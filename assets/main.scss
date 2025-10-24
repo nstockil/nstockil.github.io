@@ -8,6 +8,16 @@ header {
     padding-bottom: .5em;
 }
 
+// Fix color contrast for accessibility
+.username {
+    color: #333 !important; // Dark color for better contrast
+}
+
+// Ensure social media links have good contrast
+.social-media-list a {
+    color: #333 !important;
+}
+
 .site-header .wrapper {
   display: flex;
   justify-content: space-between;
