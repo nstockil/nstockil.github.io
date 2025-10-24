@@ -18,6 +18,21 @@ header {
     color: #333 !important;
 }
 
+// Fix post meta date contrast
+.post-meta {
+    color: #333 !important; // Dark color for better contrast
+}
+
+// Fix external links contrast
+a[href^="http"], a[href^="https://"] {
+    color: #0066cc !important; // High contrast blue for external links
+}
+
+// General link contrast improvement
+a {
+    color: #0066cc; // Ensure all links have good contrast
+}
+
 .site-header .wrapper {
   display: flex;
   justify-content: space-between;
@@ -83,4 +98,19 @@ header {
   font-weight: 300;
   line-height: 1.2;
   display: block;
+}
+
+// Consistent H1 styling with reduced spacing
+// .page-heading,
+// .post-title {
+//   font-size: 2.5em;
+//   font-weight: 400;
+//   margin-bottom: 0.5rem; // Reduced from default 1rem
+//   margin-top: 0;
+//   line-height: 1.2;
+// }
+
+// Reduce spacing between header and content
+.post-header {
+  margin-bottom: 0.5rem; // Reduced spacing after header container
 }
