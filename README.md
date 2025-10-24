@@ -1,5 +1,7 @@
 # nstockil.github.io
 
+[![Azure Static Web Apps CI/CD](https://github.com/nstockil/nstockil.github.io/actions/workflows/azure-static-web-apps-gentle-rock-04f54d003.yml/badge.svg)](https://github.com/nstockil/nstockil.github.io/actions/workflows/azure-static-web-apps-gentle-rock-04f54d003.yml)
+
 # Page Sample
 ```
 ---
